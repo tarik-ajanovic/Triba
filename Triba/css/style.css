@@ -1,0 +1,89 @@
+body {
+	background-color: #275599;
+	font-family: 'Bungee', cursive;
+}
+
+h1 {
+	font-family: 'Bungee Shade', cursive;
+	color: #E5CC22;
+}
+
+h2, h3 {
+	font-family: 'Bungee Inline', cursive;
+	color: #E5CC22;
+}
+
+.accordion-item {
+	background-color: #204680;
+	border-color: #204680;
+}
+
+.accordion-button {
+	background-color: #204680 !important;
+	color: #E5CC22 !important;
+}
+
+
+.accordion-button:focus {
+	background-color: #E5CC22 !important;
+	color: #204680 !important;
+}
+
+.accordion-body {
+	background-color: #275599;
+	font-family: 'Chivo Mono', monospace;
+	color: #E5CC22;
+	font-weight: bold;
+}
+
+.btn-primary {
+	background-color: #204680;
+	border-color: #204680;
+	color: #E5CC22;
+}
+
+.btn-primary:hover {
+	background-color: #E5CC22;
+	border-color: #E5CC22;
+	color: #204680;
+}
+
+.btn-primary:active {
+	background-color: #E5CC22;
+	border-color: #E5CC22;
+	color: #204680;
+}
+
+footer {
+	color: #E5CC22;
+}
+
+.myblock {
+	background-color: #204680;
+	border: 1px 1px 1px 1px #204680;
+	border-radius: 20px;
+}
+
+#hidden {
+	display: none;
+}
+
+.btn-secondary {
+	background-color: #E5CC22;
+	border-color: #E5CC22;
+	color: #204680;
+}
+
+.btn-secondary:hover {
+	background-color: #275599;
+	border-color: #275599;
+	color: #E5CC22;
+}
+
+.btn-secondary:active {
+	background-color: ##275599;
+	border-color: ##275599;
+	color: #E5CC22;
+}
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Triba</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Shade&family=Chivo+Mono&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="../media/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <div class="container text-center align-items-center">
+    		<h1 class="my-5">TRIBA</h1>
+    		<div class="row text-center"><h2>Game Modes<h2></div>
+    		<div class="row mb-5">
+    			<div class="col">
+    				<button onclick="startGame(8,8, false)" class="btn btn-primary rounded-pill">START 8 x 8</button>
+    			</div>
+    			<div class="col">
+    				<button onclick="startGame(6,8, false)" class="btn btn-primary rounded-pill">START 6 x 8</button>
+    			</div>
+    			<div class="col">
+    				<button onclick="startGame(10,8, false)" class="btn btn-primary rounded-pill">START 10 x 6</button>
+    			</div>
+    			<div class="col">
+    				<button onclick="startGame(10,10,true)" class="btn btn-primary rounded-pill">START Custom</button>
+    			</div>
+    		</div>
+    		<div class="pb-1">
+	    		<button onclick="playMusic()" class="btn btn-primary rounded-pill"><i class="bi bi-play-fill"></i></button>
+	    		<button onclick="stopMusic()" class="btn btn-primary rounded-pill"><i class="bi bi-stop-fill"></i></button> 
+	    	</div>   			
+    		<div class="row justify-content-center myblock p-3">
+    			<h3 id="player" class="my-1"></h3>
+    			<div id="hidden" class="winner my-1">
+	    			<h1 id="winner"></h1>
+	    			<button onclick="replay()" class="btn btn-secondary rounded-pill my-3">PLAY AGAIN</button>
+    			</div>
+    			<div>
+    				<canvas id="myCanvas" width="500" height="500"></canvas>
+    			</div>
+    		</div>
+
+    <footer class="container-fluid">    
+    	<small>&copy 2022, Tarik Ajanović</small>
+	</footer>
+	<audio id="bgmusic" loop src="../media/music.mp3"></audio>
+	<audio id="winmusic" src="../media/winmusic.mp3"></audio>
+
+		<script type="text/javascript" src="../js/game.js">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
